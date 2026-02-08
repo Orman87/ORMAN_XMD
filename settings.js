@@ -1,21 +1,18 @@
-// settings.js
-// credit by Kevin tech 
+// credits by Kevin dev
+// King Orman 
 
-const config = require('./config');
-
+const config = require('./ormanconfig');
 
 const settings = {
-  SESSION_ID: config.SESSION_ID || "", // enter session id
-  ownername: config.ownername || "ᴋᴇʟᴠɪɴ ᴛᴇᴄʜ", // Owner name
-  botname: config.botname || "JEXPLOIT", // custom bot name
-  prefa: config.prefa || ['.', '!'], // Command prefixes
-  owner: config.owner || ["256742932677"] // Owner phone numbers
+  SESSION_ID: config.SESSION_ID || "", // Session ID from config
+  ownername: config.ownername || "K̸I̸N̸G̸ O̸R̸M̸A̸N̸", // Owner name
+  botname: config.botname || "𝙾𝚁𝙼𝙰𝙽-𝚇𝙼𝙳", // Bot name
+  prefa: config.prefa || ['+', '/', ','], // Command prefixes
+  owner: config.owner || ["256704291969@s.whatsapp.net"] // Owner numbers
 };
 
-// Export settings for use in other modules
 module.exports = settings;
 
-// Watch for changes to this file and reload if updated
 const fs = require('fs');
 let file = require.resolve(__filename);
 fs.watchFile(file, () => {
